@@ -8,11 +8,18 @@
 
 #include <iostream>
 
+#include "bmp_image.h"
+
 int main(int argc, const char * argv[])
 {
 
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    BMP_Image image(512,384);
+    
+    image.randomFill();
+    
+    
+    std::string imageName = "image";
+    image.save(imageName);
     return 0;
 }
 
