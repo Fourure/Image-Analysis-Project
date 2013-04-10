@@ -13,9 +13,10 @@
 int main(int argc, const char * argv[])
 {
 
-    BMP_Image image(512,384);
+    std::string inputImage = "wikiHD.ppm";
+    BMP_Image image(inputImage);
     
-    image.randomFill();
+    //image.randomFill();
     
     
     std::string imageName = "image";

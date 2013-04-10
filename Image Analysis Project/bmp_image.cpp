@@ -19,6 +19,30 @@ BMP_Image::BMP_Image(const int width, const int height): width(width), height(he
     }
 }
 
+BMP_Image::BMP_Image(const std::string& imageFileName){
+    FILE *f = std::fopen(imageFileName.c_str(), "r");
+    
+    int tmp;
+    fscanf(f, "P3\n%d %d\n%d\n", &width, &height, &tmp);
+    
+    picture = new pixel*[width];
+    
+    for (int i=0; i<width ; ++i) {
+        picture[i] = new pixel[height];
+    }
+    
+    for (int x=0; x<width; ++x)
+    {
+        for (int y=0; y<height ; ++y) {
+            fscanf(f, "%d %d %d ", &picture[x][y][0],&picture[x][y][1],&picture[x][y][2]);
+            picture[x][y][3] = 0;
+        }
+    }
+    fclose(f);
+    
+    printf("%s load\n",imageFileName.c_str());
+}
+
 BMP_Image::~BMP_Image(){
     for (int i=0; i<width ; ++i) {
         delete [] picture[i];

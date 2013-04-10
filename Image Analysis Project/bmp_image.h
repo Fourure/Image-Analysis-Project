@@ -21,6 +21,7 @@ protected:
     
 public:
     BMP_Image(const int width, const int height);
+    BMP_Image(const std::string& imageFileName);
     ~BMP_Image();
     
     pixel& operator() (const int x,const int y);
