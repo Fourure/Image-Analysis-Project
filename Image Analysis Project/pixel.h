@@ -9,6 +9,8 @@
 #ifndef Image_Analysis_Project_pixel_h
 #define Image_Analysis_Project_pixel_h
 
+//Teston voir si le commit passe bien
+
 struct pixel {
     int R;
     int G;
