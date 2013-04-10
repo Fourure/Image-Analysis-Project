@@ -11,3 +11,8 @@
 *.lai
 *.la
 *.a
+
+# Xcode Files
+*.xcodeproj
+*.pbxproj
+Image_Analysis_Project.1
