@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6DB88A7117154ACA00FC99B2 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DB88A7017154ACA00FC99B2 /* main.cpp */; };
 		6DB88A7317154ACA00FC99B2 /* Image_Analysis_Project.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 6DB88A7217154ACA00FC99B2 /* Image_Analysis_Project.1 */; };
+		6DB88A7B17154DE000FC99B2 /* bmp_image.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 6DB88A7917154DE000FC99B2 /* bmp_image.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		6DB88A6D17154ACA00FC99B2 /* Image Analysis Project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Image Analysis Project"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DB88A7017154ACA00FC99B2 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		6DB88A7217154ACA00FC99B2 /* Image_Analysis_Project.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Image_Analysis_Project.1; sourceTree = "<group>"; };
+		6DB88A7917154DE000FC99B2 /* bmp_image.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = bmp_image.cpp; sourceTree = "<group>"; };
+		6DB88A7A17154DE000FC99B2 /* bmp_image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bmp_image.h; sourceTree = "<group>"; };
+		6DB88A7C1715540A00FC99B2 /* pixel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pixel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,9 @@
 			children = (
 				6DB88A7017154ACA00FC99B2 /* main.cpp */,
 				6DB88A7217154ACA00FC99B2 /* Image_Analysis_Project.1 */,
+				6DB88A7917154DE000FC99B2 /* bmp_image.cpp */,
+				6DB88A7A17154DE000FC99B2 /* bmp_image.h */,
+				6DB88A7C1715540A00FC99B2 /* pixel.h */,
 			);
 			path = "Image Analysis Project";
 			sourceTree = "<group>";
@@ -118,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6DB88A7117154ACA00FC99B2 /* main.cpp in Sources */,
+				6DB88A7B17154DE000FC99B2 /* bmp_image.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
